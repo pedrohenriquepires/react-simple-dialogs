@@ -1,17 +1,17 @@
 {
-  "name": "react-use-dialog",
+  "name": "react-simple-dialogs",
   "private": false,
   "version": "0.0.1",
   "author": "Pedro Henrique Pires",
   "license": "MIT",
-  "homepage": "https://github.com/pedrohenriquepires/react-use-dialog#readme",
-  "description": "A react library to dialogs",
+  "homepage": "https://github.com/pedrohenriquepires/react-simple-dialogs#readme",
+  "description": "A react library to simple dialogs",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pedrohenriquepires/react-use-dialog"
+    "url": "https://github.com/pedrohenriquepires/react-simple-dialogs"
   },
   "bugs": {
-    "url": "https://github.com/pedrohenriquepires/react-use-dialog/issues"
+    "url": "https://github.com/pedrohenriquepires/react-simple-dialogs/issues"
   },
   "keywords": [
     "dialog",
@@ -27,12 +27,11 @@
     "modal dialog",
     "custom dialog",
     "interactive dialog",
-    "dialog component",
-    "dialog container",
-    "react-use-dialog",
+    "react-simple-dialogs",
     "hook",
     "dialog hook",
     "alert hook",
+    "simple dialog",
     "react",
     "react-dialog",
     "react-alert",

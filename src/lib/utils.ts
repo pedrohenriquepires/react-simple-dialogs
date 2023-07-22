@@ -1,10 +1,12 @@
 import ReactDOM from 'react-dom/client'
 
 export const getContainer = () => {
-  const container = document.getElementById('dialog-container')
+  const container = document.getElementById('simple-dialog-container')
 
   if (!container) {
-    throw new Error('[useDialog] Dialog container not found')
+    throw new Error(
+      '[useSimpleDialog] Dialog container not found, see: https://github.com/pedrohenriquepires/react-simple-dialogs/wiki/Dialog-Container',
+    )
   }
 
   return container

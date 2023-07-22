@@ -1,11 +1,11 @@
-import { useDialog } from 'react-vite-library'
+import { useSimpleDialogs } from 'react-vite-library'
 import { Button } from 'src/components/button'
 
 export const App = () => {
-  const { showAlert, showConfirm } = useDialog()
+  const { alert, confirm } = useSimpleDialogs()
 
   const handleAlert = async () => {
-    await showAlert(
+    await alert(
       'Ipsum commodo exercitation ut velit in consectetur ex quis. Culpa ex officia nulla sunt cupidatat pariatur in ullamco tempor ex cillum aliqua anim ipsum. Id incididunt enim veniam Lorem duis aliqua consectetur in sit proident est commodo sunt aute. Cupidatat exercitation officia enim fugiat nostrud magna adipisicing.',
     )
 
@@ -14,7 +14,7 @@ export const App = () => {
 
   const handleConfirm = async () => {
     if (
-      await showConfirm(
+      await confirm(
         'Ipsum commodo exercitation ut velit in consectetur ex quis. Culpa ex officia nulla sunt cupidatat pariatur in ullamco tempor ex cillum aliqua anim ipsum. Id incididunt enim veniam Lorem duis aliqua consectetur in sit proident est commodo sunt aute. Cupidatat exercitation officia enim fugiat nostrud magna adipisicing.',
       )
     ) {

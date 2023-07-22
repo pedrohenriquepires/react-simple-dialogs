@@ -1,2 +1,2 @@
 export { DialogContainer } from './dialog-container'
-export { useDialog } from './use-dialog'
+export { useSimpleDialogs } from './use-simple-dialogs'

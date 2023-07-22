@@ -11,9 +11,9 @@ type ConfirmProps = DialogProps<{
   confirmLabel?: string
 }>
 
-export const useDialog = () => {
+export const useSimpleDialogs = () => {
   return {
-    showAlert(props: AlertProps) {
+    alert(props: AlertProps) {
       const defaultOptions = {
         closeLabel: 'Close',
         title: 'Attention',
@@ -32,7 +32,7 @@ export const useDialog = () => {
         root.render(<Alert onClose={onClose} {...options} />)
       })
     },
-    showConfirm(props: ConfirmProps) {
+    confirm(props: ConfirmProps) {
       const defaultOptions = {
         cancelLabel: 'Cancel',
         confirmLabel: 'Confirm',

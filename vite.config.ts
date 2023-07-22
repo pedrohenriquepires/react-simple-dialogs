@@ -18,9 +18,9 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve('src', 'lib/index.ts'),
-      name: 'ReactDialogs',
+      name: 'ReactUseDialog',
       formats: ['es', 'umd'],
-      fileName: (format) => `react-dialogs.${format}.js`,
+      fileName: format => `react-use-dialog.${format}.js`,
     },
     rollupOptions: {
       external: [...Object.keys(packageJson.peerDependencies)],

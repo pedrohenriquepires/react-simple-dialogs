@@ -1,14 +1,17 @@
 {
-  "name": "react-dialogs",
+  "name": "react-use-dialog",
   "private": false,
   "version": "0.0.1",
   "author": "Pedro Henrique Pires",
   "license": "MIT",
-  "homepage": "https://github.com/pedrohenriquepires/react-dialogs#readme",
+  "homepage": "https://github.com/pedrohenriquepires/react-use-dialog#readme",
   "description": "A react library to dialogs",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pedrohenriquepires/react-dialogs"
+    "url": "https://github.com/pedrohenriquepires/react-use-dialog"
+  },
+  "bugs": {
+    "url": "https://github.com/pedrohenriquepires/react-use-dialog/issues"
   },
   "keywords": [
     "dialog",
@@ -22,20 +25,19 @@
     "pop-up window",
     "lightbox",
     "modal dialog",
-    "dialog box",
     "custom dialog",
     "interactive dialog",
     "dialog component",
     "dialog container",
-    "react-dialog",
+    "react-use-dialog",
+    "hook",
+    "dialog hook",
+    "alert hook",
     "react",
-    "react-dialogs",
+    "react-dialog",
     "react-alert",
     "react-confirm"
   ],
-  "bugs": {
-    "url": "https://github.com/pedrohenriquepires/react-dialogs/issues"
-  },
   "scripts": {
     "prepare": "husky install",
     "dev": "vite",

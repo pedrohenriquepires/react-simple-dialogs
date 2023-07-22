@@ -1,3 +1,3 @@
-# React Dialogs
+# React useDialog
 
 > Work In Progress

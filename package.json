@@ -1,0 +1,93 @@
+{
+  "name": "react-dialogs",
+  "private": false,
+  "version": "0.0.1",
+  "author": "Pedro Henrique Pires",
+  "license": "MIT",
+  "homepage": "https://github.com/pedrohenriquepires/react-dialogs#readme",
+  "description": "A react library to dialogs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pedrohenriquepires/react-dialogs"
+  },
+  "keywords": [
+    "dialog",
+    "alert",
+    "confirm",
+    "modal",
+    "popup",
+    "popover",
+    "prompt",
+    "pop-up menu",
+    "pop-up window",
+    "lightbox",
+    "modal dialog",
+    "dialog box",
+    "custom dialog",
+    "interactive dialog",
+    "dialog component",
+    "dialog container",
+    "react-dialog",
+    "react",
+    "react-dialogs",
+    "react-alert",
+    "react-confirm"
+  ],
+  "bugs": {
+    "url": "https://github.com/pedrohenriquepires/react-dialogs/issues"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "lint-staged": "lint-staged"
+  },
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/react-dialogs.es.js",
+      "require": "./dist/react-dialogs.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "main": "./dist/react-dialogs.umd.js",
+  "module": "./dist/react-dialogs.es.js",
+  "types": "./dist/index.d.ts",
+  "devDependencies": {
+    "lint-staged": "^13.2.3",
+    "prettier": "^3.0.0",
+    "prettier-plugin-tailwindcss": "^0.4.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "vite-plugin-dts": "^3.3.1",
+    "vite-tsconfig-paths": "^4.2.0",
+    "@types/node": "^20.4.4",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "husky": "^8.0.3",
+    "postcss": "^8.4.27",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
+  },
+  "peerDependencies": {
+    "react": "16.8.0 || >=17.x",
+    "react-dom": "16.8.0 || >=17.x"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.0",
+    "framer-motion": "^10.13.0"
+  }
+}

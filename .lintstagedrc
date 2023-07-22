@@ -1,0 +1,5 @@
+{
+  "{src/**/*.ts,src/**/*.tsx}": [
+    "prettier --config prettier.config.js --write"
+  ]
+}

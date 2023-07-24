@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "author": "Pedro Henrique Pires",
   "license": "MIT",
-  "homepage": "https://github.com/pedrohenriquepires/react-simple-dialogs#readme",
-  "description": "A react library to simple dialogs",
+  "homepage": "https://pedrohenriquepires.github.io/react-simple-dialogs-docs",
+  "description": "A react library to create simple dialogs",
   "repository": {
     "type": "git",
     "url": "https://github.com/pedrohenriquepires/react-simple-dialogs"
@@ -45,7 +45,6 @@
     "preview": "vite preview",
     "lint-staged": "lint-staged"
   },
-  "type": "module",
   "files": [
     "dist"
   ],
@@ -79,7 +78,7 @@
     "framer-motion": "^10.13.0"
   },
   "peerDependencies": {
-    "react": "16.8.0 || >=17.x",
-    "react-dom": "16.8.0 || >=17.x"
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   }
 }

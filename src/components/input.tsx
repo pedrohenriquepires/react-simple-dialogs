@@ -16,7 +16,7 @@ export const Input: FC<Props> = ({ label, name, onChange }) => {
         onChange={onChange}
         id={name}
         name={name}
-        className="rsd-mt-1 rsd-w-full rsd-rounded-md rsd-border rsd-border-gray-200 rsd-px-3 rsd-py-2 rsd-outline-none"
+        className="rsd-mt-1 rsd-w-full rsd-rounded-md rsd-border rsd-border-solid rsd-border-gray-200 rsd-bg-white rsd-px-3 rsd-py-2 rsd-text-black rsd-outline-none"
       />
     </div>
   )

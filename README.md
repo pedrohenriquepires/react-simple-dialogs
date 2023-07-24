@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://pedrohenriquepires.github.io/react-simple-dialogs-docs/docs/getting-started/Simple%20Usage" about="_blank"><img src="./docs/logo.svg" width="100%" /></a><br /><br />
+  <a href="https://pedrohenriquepires.github.io/react-simple-dialogs-docs/docs/getting-started/Introduction" about="_blank"><img src="./docs/logo.svg" width="100%" /></a><br /><br />
   <a href="https://github.com/pedrohenriquepires/react-simple-dialogs/actions/workflows/build.yml" about="_blank"><img alt="Build" src="https://github.com/pedrohenriquepires/react-simple-dialogs/actions/workflows/build.yml/badge.svg"></a>
   <img alt="License MIT" src="https://img.shields.io/badge/license-MIT-blue">
   <img alt="NPM Downloads" src="https://img.shields.io/npm/dt/react-simple-dialogs">

@@ -1,7 +1,7 @@
 {
   "name": "react-simple-dialogs",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.4",
   "author": "Pedro Henrique Pires",
   "license": "MIT",
   "homepage": "https://github.com/pedrohenriquepires/react-simple-dialogs#readme",
@@ -40,7 +40,7 @@
   "scripts": {
     "prepare": "husky install",
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "NODE_ENV=publish tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "lint-staged": "lint-staged"
@@ -49,15 +49,8 @@
   "files": [
     "dist"
   ],
-  "exports": {
-    ".": {
-      "import": "./dist/lib/react-simple-dialogs.es.js",
-      "require": "./dist/lib/react-simple-dialogs.umd.js"
-    },
-    "./dist/style.css": "./dist/lib/style.css"
-  },
-  "main": "./dist/lib/react-simple-dialogs.umd.js",
-  "module": "./dist/lib/react-simple-dialogs.es.js",
+  "main": "./dist/react-simple-dialogs.umd.js",
+  "module": "./dist/react-simple-dialogs.es.js",
   "types": "./dist/lib/index.d.ts",
   "devDependencies": {
     "lint-staged": "^13.2.3",

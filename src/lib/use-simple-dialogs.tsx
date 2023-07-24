@@ -2,11 +2,11 @@ import { Alert } from '../components/alert'
 import { Confirmation } from '../components/confirmation'
 import { DialogProps, getOptions, getRoot } from './utils'
 
-type AlertProps = DialogProps<{
+export type AlertProps = DialogProps<{
   closeLabel?: string
 }>
 
-type ConfirmProps = DialogProps<{
+export type ConfirmProps = DialogProps<{
   cancelLabel?: string
   confirmLabel?: string
 }>

@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./docs/logo.svg" width="100%" /><br /><br />
+  <a href="https://pedrohenriquepires.github.io/react-simple-dialogs-docs/docs/getting-started/Simple%20Usage" about="_blank"><img src="./docs/logo.svg" width="100%" /></a><br /><br />
   <a href="https://github.com/pedrohenriquepires/react-simple-dialogs/actions/workflows/build.yml" about="_blank"><img alt="Build" src="https://github.com/pedrohenriquepires/react-simple-dialogs/actions/workflows/build.yml/badge.svg"></a>
   <img alt="License MIT" src="https://img.shields.io/badge/license-MIT-blue">
   <img alt="NPM Downloads" src="https://img.shields.io/npm/dt/react-simple-dialogs">
@@ -8,9 +8,14 @@
 
 # React Simple Dialogs
 
-Beautiful dialogs with a simple usage. No unnecessary settings, native-like usage, **simple**. You can make it work in less than 10 seconds!
+Beautiful dialogs with a simple usage. No unnecessary settings, native-like usage, **simple**.
+You can make it work in less than 10 seconds!
 
-# Instalation
+### [📖 Documentation](https://pedrohenriquepires.github.io/react-simple-dialogs-docs/docs/getting-started/Introduction)
+
+### [✨ Examples](https://pedrohenriquepires.github.io/react-simple-dialogs-docs/docs/getting-started/Simple%20Usage)
+
+# 🏗️ Instalation
 
 ```bash
 # npm
@@ -44,7 +49,7 @@ function App() {
 }
 ```
 
-# Simple Usage
+# 💡 Simple Usage
 
 Use the dialogs is almost like use the dialogs native function (`alert`, `confirm` and `prompt`).
 

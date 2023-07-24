@@ -8,7 +8,7 @@
 
 # React Simple Dialogs
 
-Beautiful dialogs with a simple usage. No unnecessary settings, native-like usage, **simple**.
+Beautiful dialogs with a simple usage. No unnecessary settings, native-like usage, **simple**.<br />
 You can make it work in less than 10 seconds!
 
 ### [📖 Documentation](https://pedrohenriquepires.github.io/react-simple-dialogs-docs/docs/getting-started/Introduction)

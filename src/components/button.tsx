@@ -2,25 +2,20 @@ import { cva, type VariantProps } from 'class-variance-authority'
 import { ButtonHTMLAttributes, FC, PropsWithChildren } from 'react'
 
 const buttonVariants = cva(
-  'rounded relative shadow font-normal inline-flex items-center text-sm transition-colors duration-75 disabled:pointer-events-none h-8 px-5',
+  'rsd-border-none rsd-rounded rsd-relative rsd-shadow rsd-font-normal rsd-inline-flex rsd-items-center rsd-text-sm rsd-transition-colors rsd-duration-75 disabled:rsd-pointer-events-none rsd-h-8 rsd-px-5',
   {
     variants: {
       intent: {
-        primary: 'bg-sky-700 text-white hover:bg-sky-600 active:bg-sky-700',
-        ghost: 'shadow-none',
+        primary: 'rsd-bg-sky-700 rsd-text-white hover:bg-sky-600 active:rsd-bg-sky-700',
+        ghost: 'rsd-shadow-none',
       },
     },
-  }
+  },
 )
 
-type Props = VariantProps<typeof buttonVariants> &
-  ButtonHTMLAttributes<HTMLButtonElement>
+type Props = VariantProps<typeof buttonVariants> & ButtonHTMLAttributes<HTMLButtonElement>
 
-export const Button: FC<PropsWithChildren<Props>> = ({
-  children,
-  intent = 'primary',
-  onClick,
-}) => {
+export const Button: FC<PropsWithChildren<Props>> = ({ children, intent = 'primary', onClick }) => {
   const variantStyles = buttonVariants({ intent })
 
   return (

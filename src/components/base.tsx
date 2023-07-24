@@ -11,13 +11,13 @@ export const Base: FC<PropsWithChildren<Props>> = ({ visible, onExitComplete, ch
     <AnimatePresence onExitComplete={onExitComplete}>
       {visible && (
         <motion.div
-          className="fixed left-0 top-0 z-[999] flex h-full w-full items-start justify-center bg-gray-900 bg-opacity-90"
+          className="rsd-fixed rsd-left-0 rsd-top-0 rsd-z-[9999] rsd-flex rsd-h-full rsd-w-full rsd-items-start rsd-justify-center rsd-bg-gray-900 rsd-bg-opacity-90"
           initial={{ backdropFilter: 'blur(0px)', opacity: 0 }}
           animate={{ backdropFilter: 'blur(2px)', opacity: 1 }}
           exit={{ backdropFilter: 'blur(0px)', opacity: 0 }}
         >
           <motion.div
-            className="flex max-w-md flex-col items-center gap-4 break-all rounded-xl bg-white px-6 py-4 shadow-xl"
+            className="rsd-flex rsd-max-w-md rsd-flex-col rsd-items-center rsd-gap-4 rsd-break-words rsd-rounded-xl rsd-bg-white rsd-px-6 rsd-py-4 rsd-shadow-xl"
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 50, opacity: 1 }}
             exit={{ y: '-100%', opacity: 0 }}

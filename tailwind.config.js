@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  purge: {
-    enabled: process.env.NODE_ENV === 'publish',
-    content: ['./src/**/*.{js,jsx,ts,tsx}']
-  },
+  prefix: 'rsd-',
   content: [
     "./index.html",
     "./src/**/*.tsx",

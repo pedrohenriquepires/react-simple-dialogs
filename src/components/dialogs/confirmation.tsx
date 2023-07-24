@@ -1,6 +1,6 @@
 import { FC, useState } from 'react'
-import { Base } from './base'
-import { Button } from './button'
+import { Base } from '../base'
+import { Button } from '../button'
 
 type Props = {
   message: string
@@ -19,17 +19,15 @@ export const Confirmation: FC<Props> = ({ message, title, onClose, cancelLabel, 
 
   return (
     <Base visible={value === undefined} onExitComplete={() => onClose(value!)}>
-      <div className="flex flex-col gap-2">
-        {title && <div className="text-lg font-semibold text-gray-900">{title}</div>}
-        <div className="text-sm text-gray-900">{message}</div>
+      <div className="rsd-flex rsd-flex-col rsd-gap-2">
+        {title && <div className="rsd-text-lg rsd-font-semibold rsd-text-gray-900">{title}</div>}
+        <div className="rsd-text-sm rsd-text-gray-900">{message}</div>
       </div>
 
-      <div className="h-px w-full bg-gray-200"></div>
+      <div className="rsd-h-px rsd-w-full rsd-bg-gray-200"></div>
 
-      <div className="flex gap-2">
-        <Button onClick={() => handleClose(true)}>
-          {confirmLabel}
-        </Button>
+      <div className="rsd-flex rsd-gap-2">
+        <Button onClick={() => handleClose(true)}>{confirmLabel}</Button>
 
         <Button onClick={() => handleClose(false)} intent="ghost">
           {cancelLabel}

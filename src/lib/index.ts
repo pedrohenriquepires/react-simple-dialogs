@@ -1,4 +1,7 @@
+export { simpleAlert } from './dialogs/simple-alert'
+export type { AlertProps } from './dialogs/simple-alert'
+
+export { simpleConfirm } from './dialogs/simple-confirm'
+export type { ConfirmProps } from './dialogs/simple-confirm'
+
 export { SimpleDialogContainer } from './simple-dialog-container'
-export { useSimpleDialogs } from './use-simple-dialogs'
-export type { AlertProps, ConfirmProps } from './use-simple-dialogs'
-import './index.css'

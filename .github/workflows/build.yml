@@ -1,0 +1,28 @@
+name: Build
+on:
+  push:
+    branches: [main, development]
+  pull_request:
+    branches: [main]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v2
+
+      - name: ⎔ Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '16.x'
+
+      - name: 📥 Install dependencies
+        uses: bahmutov/npm-install@v1
+        with:
+          useLockFile: false
+
+      # - name: ▶️ Run tests
+      #   run: npm run test
+
+      - name: ▶️ Run build
+        run: npm run build

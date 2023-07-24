@@ -1,7 +1,7 @@
 <div align="center">
   <img src="./docs/logo.svg" width="600" /><br /><br />
   <a href="https://github.com/pedrohenriquepires/react-simple-dialogs/actions/workflows/build.yml" about="_blank"><img alt="Build" src="https://github.com/pedrohenriquepires/react-simple-dialogs/actions/workflows/build.yml/badge.svg"></a>
-  <img alt="License MIT" src="https://img.shields.io/badge/License-MIT-blue">
+  <img alt="License MIT" src="https://img.shields.io/badge/license-MIT-blue">
   <img alt="NPM Downloads" src="https://img.shields.io/npm/dt/react-simple-dialogs">
   <img alt="NPM Version" src="https://img.shields.io/npm/v/react-simple-dialogs">
 </div>

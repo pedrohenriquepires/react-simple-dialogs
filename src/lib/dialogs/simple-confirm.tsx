@@ -1,5 +1,5 @@
 import { Confirmation } from 'src/components/dialogs/confirmation'
-import { DialogProps, getOptions, getRoot } from '../../utils'
+import { DialogProps, getOptions, getRoot } from '../utils'
 
 export type ConfirmProps = DialogProps<{
   cancelLabel?: string

@@ -1,3 +1,5 @@
+'use client'
+
 import styles from './index.css?inline'
 
 export const SimpleDialogContainer = () => (

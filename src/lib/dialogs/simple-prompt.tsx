@@ -1,5 +1,5 @@
 import { Prompt, PromptResult } from 'src/components/dialogs/prompt'
-import { DialogProps, getOptions, getRoot } from '../../utils'
+import { DialogProps, getOptions, getRoot } from '../utils'
 
 export type PromptProps = DialogProps<{
   cancelLabel?: string

@@ -1,5 +1,5 @@
 import { Alert } from 'src/components/dialogs/alert'
-import { DialogProps, getOptions, getRoot } from '../../utils'
+import { DialogProps, getOptions, getRoot } from '../utils'
 
 export type AlertProps = DialogProps<{
   closeLabel?: string

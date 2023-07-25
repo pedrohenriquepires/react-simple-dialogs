@@ -4,7 +4,7 @@ import { Button } from '../button'
 
 type Props = {
   message: string
-  title?: string
+  title: string
   closeLabel: string
   onClose: () => void
 }
@@ -17,9 +17,9 @@ export const Alert: FC<Props> = ({ message, title, onClose, closeLabel }) => {
   }
 
   return (
-    <Base visible={show} onExitComplete={onClose}>
+    <Base visible={show} onExitComplete={onClose} dataTestId="alert-dialog">
       <div className="rsd-flex rsd-w-full rsd-flex-col rsd-gap-2">
-        {title && <div className="rsd-text-lg rsd-font-semibold rsd-text-gray-900">{title}</div>}
+        <div className="rsd-text-lg rsd-font-semibold rsd-text-gray-900">{title}</div>
         <div className="rsd-text-sm rsd-text-gray-900">{message}</div>
       </div>
 

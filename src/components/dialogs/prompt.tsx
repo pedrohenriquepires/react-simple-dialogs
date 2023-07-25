@@ -33,14 +33,14 @@ export const Prompt: FC<Props> = ({ message, title, onClose, cancelLabel, confir
   }
 
   return (
-    <Base visible={show} onExitComplete={() => onClose(result!)}>
+    <Base visible={show} onExitComplete={() => onClose(result!)} dataTestId="prompt-dialog">
       <div className="rsd-flex rsd-w-full rsd-flex-col rsd-gap-2">
-        {title && <div className="rsd-text-lg rsd-font-semibold rsd-text-gray-900">{title}</div>}
+        <div className="rsd-text-lg rsd-font-semibold rsd-text-gray-900">{title}</div>
         <div className="rsd-text-sm rsd-text-gray-900">{message}</div>
       </div>
 
       <div className="rsd-w-full">
-        <Input onChange={handleChange} label={inputLabel} name="value" />
+        <Input onChange={handleChange} label={inputLabel} name="value" dataTestId="prompt-input" />
       </div>
 
       <div className="rsd-h-px rsd-w-full rsd-bg-gray-200"></div>

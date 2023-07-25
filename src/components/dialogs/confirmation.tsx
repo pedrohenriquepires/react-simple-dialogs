@@ -18,9 +18,9 @@ export const Confirmation: FC<Props> = ({ message, title, onClose, cancelLabel, 
   }
 
   return (
-    <Base visible={value === undefined} onExitComplete={() => onClose(value!)}>
+    <Base visible={value === undefined} onExitComplete={() => onClose(value!)} dataTestId="confirmation-dialog">
       <div className="rsd-flex rsd-w-full rsd-flex-col rsd-gap-2">
-        {title && <div className="rsd-text-lg rsd-font-semibold rsd-text-gray-900">{title}</div>}
+        <div className="rsd-text-lg rsd-font-semibold rsd-text-gray-900">{title}</div>
         <div className="rsd-text-sm rsd-text-gray-900">{message}</div>
       </div>
 

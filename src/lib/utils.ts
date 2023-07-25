@@ -5,7 +5,7 @@ export const getContainer = () => {
 
   if (!container) {
     throw new Error(
-      '[useSimpleDialog] Dialog container not found, see: https://github.com/pedrohenriquepires/react-simple-dialogs/wiki/Dialog-Container',
+      '[React Simple Dialogs] Dialog container not found, see: https://github.com/pedrohenriquepires/react-simple-dialogs/wiki/Dialog-Container',
     )
   }
 

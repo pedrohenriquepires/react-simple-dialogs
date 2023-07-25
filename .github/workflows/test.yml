@@ -1,11 +1,11 @@
-name: Build
+name: Test
 on:
   push:
     branches: [main, development]
   pull_request:
     branches: [main]
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: ⬇️ Checkout repo
@@ -21,5 +21,5 @@ jobs:
         with:
           useLockFile: false
 
-      - name: ▶️ Run build
-        run: npm run build
+      - name: 🧪 Run tests
+        run: npm run test:once

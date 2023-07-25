@@ -43,7 +43,8 @@
     "build": "NODE_ENV=publish tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "postbuild": "./prepend-use-client.sh"
   },
   "files": [
     "dist"

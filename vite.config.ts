@@ -15,6 +15,7 @@ export default defineConfig({
     tsConfigPaths(),
     dts({
       include: ['src/lib/'],
+      exclude: ['src/**/__tests__'],
     }),
   ],
   build: {

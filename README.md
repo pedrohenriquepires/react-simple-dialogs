@@ -52,7 +52,7 @@ function App() {
 
 # 💡 Simple Usage
 
-Use the dialogs is almost like use the dialogs native function (`alert`, `confirm` and `prompt`).
+Using the dialogs is almost like using the native dialogs function (`alert`, `confirm` and `prompt`).
 
 > All dialog function will return an `Promise` that only resolves when the user interacts with the dialog, so you can wait for the user interaction to continue your code execution.
 

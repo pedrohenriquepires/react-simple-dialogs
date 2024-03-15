@@ -93,3 +93,23 @@ const showPrompt = async () => {
   console.log(`User name is ${name || 'a mistery'}`)
 }
 ```
+
+## Modal Dialog
+
+```tsx
+import { simpleModal } from 'react-simple-dialogs'
+
+const showPrompt = async () => {
+  await simpleModal(closeFn => (
+    <div>
+      <h1>My modal</h1>
+
+      <p>My modal content, I can use this for anything I want!</p>
+
+      <button onClick={closeFn}>Close</button>
+    </div>
+  ))
+
+  console.log('Modal was closed')
+}
+```

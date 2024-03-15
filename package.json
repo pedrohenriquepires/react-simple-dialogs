@@ -1,7 +1,7 @@
 {
   "name": "react-simple-dialogs",
   "private": false,
-  "version": "1.0.1",
+  "version": "1.2.0",
   "author": "Pedro Henrique Pires",
   "license": "MIT",
   "homepage": "https://pedrohenriquepires.github.io/react-simple-dialogs-docs",
@@ -71,7 +71,6 @@
     "eslint": "^8.45.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
-    "framer-motion": "^10.13.0",
     "husky": "^8.0.3",
     "jsdom": "^22.1.0",
     "lint-staged": "^13.2.3",

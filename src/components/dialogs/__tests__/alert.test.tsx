@@ -1,4 +1,4 @@
-import { fireEvent, render, screen, waitForElementToBeRemoved } from '@testing-library/react'
+import { fireEvent, render, screen } from '@testing-library/react'
 import { Alert } from '../alert'
 
 describe('Alert test', () => {
@@ -31,8 +31,9 @@ describe('Alert test', () => {
 
     fireEvent.click(closeButton)
 
-    await waitForElementToBeRemoved(() => screen.queryByText(title))
+    const titleElement = screen.queryByText(title)
 
+    expect(titleElement).not.toBeInTheDocument()
     expect(onClose).toHaveBeenCalledOnce()
   })
 })

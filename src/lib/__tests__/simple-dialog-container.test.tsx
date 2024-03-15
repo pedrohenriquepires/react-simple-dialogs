@@ -11,10 +11,12 @@ describe('SimpleDialogContainer test', () => {
   })
 
   test('should render the styles correctly', () => {
+    const variableStyles = `:root {--rsd-primary-color: rgb(3 105 161);--rsd-primary-hover-color: rgb(2 132 199);--rsd-backdrop-color: rgba(17, 24, 39, 0.9);}`
+
     render(<SimpleDialogContainer />)
     const stylesElement = screen.getByTestId('simple-dialog-styles')
 
     expect(stylesElement).toBeInTheDocument()
-    expect(stylesElement.innerHTML).toBe(styles)
+    expect(stylesElement.innerHTML).toBe(variableStyles + styles)
   })
 })

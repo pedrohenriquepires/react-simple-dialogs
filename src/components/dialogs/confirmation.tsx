@@ -11,14 +11,15 @@ type Props = {
 }
 
 export const Confirmation: FC<Props> = ({ message, title, onClose, cancelLabel, confirmLabel }) => {
-  const [value, setValue] = useState<boolean>()
+  const [isOpen, setIsOpen] = useState(true)
 
   const handleClose = (value: boolean) => {
-    setValue(value)
+    onClose(value)
+    setIsOpen(false)
   }
 
   return (
-    <Base visible={value === undefined} onExitComplete={() => onClose(value!)} dataTestId="confirmation-dialog">
+    <Base visible={isOpen} dataTestId="confirmation-dialog">
       <div className="rsd-flex rsd-w-full rsd-flex-col rsd-gap-2">
         <div className="rsd-text-lg rsd-font-semibold rsd-text-gray-900">{title}</div>
         <div className="rsd-text-sm rsd-text-gray-900">{message}</div>

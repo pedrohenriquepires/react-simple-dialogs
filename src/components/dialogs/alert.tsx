@@ -10,14 +10,15 @@ type Props = {
 }
 
 export const Alert: FC<Props> = ({ message, title, onClose, closeLabel }) => {
-  const [show, setShow] = useState(true)
+  const [isOpen, setIsOpen] = useState(true)
 
   const handleClose = () => {
-    setShow(false)
+    setIsOpen(false)
+    onClose()
   }
 
   return (
-    <Base visible={show} onExitComplete={onClose} dataTestId="alert-dialog">
+    <Base visible={isOpen} dataTestId="alert-dialog">
       <div className="rsd-flex rsd-w-full rsd-flex-col rsd-gap-2">
         <div className="rsd-text-lg rsd-font-semibold rsd-text-gray-900">{title}</div>
         <div className="rsd-text-sm rsd-text-gray-900">{message}</div>

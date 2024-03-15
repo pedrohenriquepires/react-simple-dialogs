@@ -1,4 +1,4 @@
-import { fireEvent, render, screen, waitFor, waitForElementToBeRemoved } from '@testing-library/react'
+import { fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { act } from 'react-dom/test-utils'
 import { SimpleDialogContainer } from 'src/lib/simple-dialog-container'
 import { describe, expect, test } from 'vitest'
@@ -89,8 +89,9 @@ describe('simpleConfirm test', () => {
       fireEvent.click(confirmButton)
     })
 
-    await waitForElementToBeRemoved(() => screen.getByTestId('confirmation-dialog'))
+    const titleElement = screen.queryByText('confirmation-dialog')
 
+    expect(titleElement).not.toBeInTheDocument()
     expect(result).resolves.toBe(true)
   })
 
@@ -109,8 +110,9 @@ describe('simpleConfirm test', () => {
       fireEvent.click(confirmButton)
     })
 
-    await waitForElementToBeRemoved(() => screen.getByTestId('confirmation-dialog'))
+    const confirmDialogElement = screen.queryByText('confirmation-dialog')
 
+    expect(confirmDialogElement).not.toBeInTheDocument()
     expect(result).resolves.toBe(false)
   })
 })

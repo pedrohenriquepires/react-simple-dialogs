@@ -19,10 +19,12 @@ export const Prompt: FC<Props> = ({ message, title, onClose, cancelLabel, confir
   const [result, setResult] = useState<PromptResult>('')
 
   const handleConfirm = () => {
+    onClose(result)
     setShow(false)
   }
 
   const handleCancel = () => {
+    onClose(null)
     setResult(null)
     setShow(false)
   }
@@ -33,7 +35,7 @@ export const Prompt: FC<Props> = ({ message, title, onClose, cancelLabel, confir
   }
 
   return (
-    <Base visible={show} onExitComplete={() => onClose(result!)} dataTestId="prompt-dialog">
+    <Base visible={show} dataTestId="prompt-dialog">
       <div className="rsd-flex rsd-w-full rsd-flex-col rsd-gap-2">
         <div className="rsd-text-lg rsd-font-semibold rsd-text-gray-900">{title}</div>
         <div className="rsd-text-sm rsd-text-gray-900">{message}</div>

@@ -1,4 +1,4 @@
-import { fireEvent, render, screen, waitForElementToBeRemoved } from '@testing-library/react'
+import { fireEvent, render, screen } from '@testing-library/react'
 import { describe, expect, test, vitest } from 'vitest'
 import { Confirmation } from '../confirmation'
 
@@ -51,8 +51,9 @@ describe('Confirmation test', () => {
     const cancelButton = screen.getByText(cancelLabel)
     fireEvent.click(cancelButton)
 
-    await waitForElementToBeRemoved(() => screen.queryByText(title))
+    const titleElement = screen.queryByText(title)
 
+    expect(titleElement).not.toBeInTheDocument()
     expect(onClose).toHaveBeenCalledWith(false)
   })
 
@@ -76,8 +77,9 @@ describe('Confirmation test', () => {
     const confirmButton = screen.getByText(confirmLabel)
     fireEvent.click(confirmButton)
 
-    await waitForElementToBeRemoved(() => screen.queryByText(title))
+    const titleElement = screen.queryByText(title)
 
+    expect(titleElement).not.toBeInTheDocument()
     expect(onClose).toHaveBeenCalledWith(true)
   })
 })

@@ -1,4 +1,4 @@
-import { fireEvent, render, screen, waitFor, waitForElementToBeRemoved } from '@testing-library/react'
+import { fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { act } from 'react-dom/test-utils'
 import { SimpleDialogContainer } from 'src/lib/simple-dialog-container'
 import { describe, expect, test } from 'vitest'
@@ -83,8 +83,9 @@ describe('simpleAlert test', () => {
       fireEvent.click(closeButton)
     })
 
-    await waitForElementToBeRemoved(() => screen.getByTestId('alert-dialog'))
+    const alertDialogElement = screen.queryByText('alert-dialog')
 
+    expect(alertDialogElement).not.toBeInTheDocument()
     expect(result).resolves.toBeUndefined()
   })
 })

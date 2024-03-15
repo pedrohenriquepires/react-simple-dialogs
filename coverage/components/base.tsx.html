@@ -25,7 +25,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>33/33</span>
+                <span class='fraction'>21/21</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>33/33</span>
+                <span class='fraction'>21/21</span>
             </div>
         
             
@@ -84,21 +84,7 @@
 <a name='L19'></a><a href='#L19'>19</a>
 <a name='L20'></a><a href='#L20'>20</a>
 <a name='L21'></a><a href='#L21'>21</a>
-<a name='L22'></a><a href='#L22'>22</a>
-<a name='L23'></a><a href='#L23'>23</a>
-<a name='L24'></a><a href='#L24'>24</a>
-<a name='L25'></a><a href='#L25'>25</a>
-<a name='L26'></a><a href='#L26'>26</a>
-<a name='L27'></a><a href='#L27'>27</a>
-<a name='L28'></a><a href='#L28'>28</a>
-<a name='L29'></a><a href='#L29'>29</a>
-<a name='L30'></a><a href='#L30'>30</a>
-<a name='L31'></a><a href='#L31'>31</a>
-<a name='L32'></a><a href='#L32'>32</a>
-<a name='L33'></a><a href='#L33'>33</a>
-<a name='L34'></a><a href='#L34'>34</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<a name='L22'></a><a href='#L22'>22</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -108,58 +94,36 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">34x</span>
 <span class="cline-any cline-yes">34x</span>
-<span class="cline-any cline-yes">34x</span>
-<span class="cline-any cline-yes">24x</span>
-<span class="cline-any cline-yes">24x</span>
-<span class="cline-any cline-yes">24x</span>
-<span class="cline-any cline-yes">24x</span>
-<span class="cline-any cline-yes">24x</span>
-<span class="cline-any cline-yes">24x</span>
-<span class="cline-any cline-yes">24x</span>
-<span class="cline-any cline-yes">24x</span>
-<span class="cline-any cline-yes">24x</span>
-<span class="cline-any cline-yes">24x</span>
-<span class="cline-any cline-yes">24x</span>
-<span class="cline-any cline-yes">24x</span>
-<span class="cline-any cline-yes">24x</span>
-<span class="cline-any cline-yes">24x</span>
-<span class="cline-any cline-yes">24x</span>
-<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">28x</span>
+<span class="cline-any cline-yes">28x</span>
+<span class="cline-any cline-yes">28x</span>
+<span class="cline-any cline-yes">28x</span>
+<span class="cline-any cline-yes">28x</span>
+<span class="cline-any cline-yes">28x</span>
+<span class="cline-any cline-yes">28x</span>
+<span class="cline-any cline-yes">28x</span>
 <span class="cline-any cline-yes">34x</span>
 <span class="cline-any cline-yes">34x</span>
 <span class="cline-any cline-yes">34x</span>
-<span class="cline-any cline-yes">34x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { AnimatePresence, motion } from 'framer-motion'
-import { FC, PropsWithChildren } from 'react'
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { FC, PropsWithChildren } from 'react'
 &nbsp;
 type Props = {
   visible: boolean
-  onExitComplete: () =&gt; void
   dataTestId: string
 }
 &nbsp;
-export const Base: FC&lt;PropsWithChildren&lt;Props&gt;&gt; = ({ visible, onExitComplete, children, dataTestId }) =&gt; {
+export const Base: FC&lt;PropsWithChildren&lt;Props&gt;&gt; = ({ visible, children, dataTestId }) =&gt; {
   return (
-    &lt;AnimatePresence onExitComplete={onExitComplete}&gt;
-      {visible &amp;&amp; (
-        &lt;motion.div
-          data-testid={dataTestId}
-          className="rsd-fixed rsd-left-0 rsd-top-0 rsd-z-[9999] rsd-flex rsd-h-full rsd-w-full rsd-items-start rsd-justify-center rsd-bg-gray-900 rsd-bg-opacity-90"
-          initial={{ backdropFilter: 'blur(0px)', opacity: 0 }}
-          animate={{ backdropFilter: 'blur(2px)', opacity: 1 }}
-          exit={{ backdropFilter: 'blur(0px)', opacity: 0 }}
-        &gt;
-          &lt;motion.div
-            className="rsd-flex rsd-max-w-md rsd-flex-col rsd-items-center rsd-gap-4 rsd-break-words rsd-rounded-xl rsd-bg-white rsd-px-6 rsd-py-4 rsd-shadow-xl"
-            initial={{ y: -100, opacity: 0 }}
-            animate={{ y: 50, opacity: 1 }}
-            exit={{ y: '-100%', opacity: 0 }}
-          &gt;
-            {children}
-          &lt;/motion.div&gt;
-        &lt;/motion.div&gt;
-      )}
-    &lt;/AnimatePresence&gt;
+    visible &amp;&amp; (
+      &lt;div
+        data-testid={dataTestId}
+        className="rsd-fixed rsd-left-0 rsd-top-0 rsd-z-[9999] rsd-flex rsd-h-full rsd-w-full rsd-animate-fade-in rsd-items-start rsd-justify-center rsd-bg-backdrop rsd-bg-opacity-90"
+      &gt;
+        &lt;div className="rsd-flex rsd-max-w-md rsd-transform-gpu rsd-animate-slide-down rsd-flex-col rsd-items-center rsd-gap-4 rsd-break-words rsd-rounded-xl rsd-bg-white rsd-px-6 rsd-py-4 rsd-shadow-xl"&gt;
+          {children}
+        &lt;/div&gt;
+      &lt;/div&gt;
+    )
   )
 }
 &nbsp;</pre></td></tr></table></pre>
@@ -169,7 +133,7 @@ export const Base: FC&lt;PropsWithChildren&lt;Props&gt;&gt; = ({ visible, onExit
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-03-15T13:54:15.727Z
+                at 2024-03-15T18:35:27.122Z
             </div>
         <script src="../prettify.js"></script>
         <script>

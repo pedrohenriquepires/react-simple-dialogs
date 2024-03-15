@@ -7,7 +7,12 @@ export default {
     "./src/**/*.tsx",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'primary': 'var(--rsd-primary-color)',
+        'primary-hover': 'var(--rsd-primary-hover-color)'
+      }
+    },
   },
   plugins: [],
 }

@@ -6,7 +6,7 @@ const buttonVariants = cva(
   {
     variants: {
       intent: {
-        primary: 'rsd-bg-sky-700 rsd-text-white hover:rsd-bg-sky-600 active:rsd-bg-sky-700',
+        primary: 'rsd-bg-primary rsd-text-white hover:rsd-bg-primary-hover',
         ghost: 'rsd-shadow-none rsd-bg-white rsd-text-gray-900',
       },
     },

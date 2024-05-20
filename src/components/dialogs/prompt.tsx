@@ -3,20 +3,18 @@ import { Base } from '../base'
 import { Button } from '../button'
 import { Input } from '../input'
 
-export type PromptResult = string | null
-
 type Props = {
   message: string
   title?: string
   cancelLabel: string
   confirmLabel: string
   inputLabel: string
-  onClose: (result: PromptResult) => void
+  onClose: (result: string | null) => void
 }
 
 export const Prompt: FC<Props> = ({ message, title, onClose, cancelLabel, confirmLabel, inputLabel }) => {
   const [show, setShow] = useState(true)
-  const [result, setResult] = useState<PromptResult>('')
+  const [result, setResult] = useState<string | null>('')
 
   const handleConfirm = () => {
     onClose(result)

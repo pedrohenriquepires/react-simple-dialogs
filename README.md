@@ -1,3 +1,6 @@
+# ⚠️ Deprecated
+This library is no longer maintained
+
 <div align="center">
   <a href="https://pedrohenriquepires.github.io/react-simple-dialogs-docs/docs/getting-started/Introduction" target="_blank"><img src="./docs/logo.svg" width="100%" /></a><br /><br />
   <a href="https://github.com/pedrohenriquepires/react-simple-dialogs/actions/workflows/build.yml" target="_blank"><img alt="Build" src="https://github.com/pedrohenriquepires/react-simple-dialogs/actions/workflows/build.yml/badge.svg"></a>
